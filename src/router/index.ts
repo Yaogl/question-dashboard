@@ -6,14 +6,14 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: '首页',
-    redirect: '/about',
+    redirect: '/question/list',
     component: GloblLayout,
     children: [
       {
-        path: '/about',
-        component: import(/* webpackChunkName: "about" */ '../views/About.vue'),
+        path: '/question/list',
+        component: import(/* webpackChunkName: "about" */ '../views/question/list.vue'),
         meta: {
-          title: '云主机'
+          title: '题库列表'
         }
       }
     ]
